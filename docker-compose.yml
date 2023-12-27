@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  baccarat_simulation_data:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: baccarat_simulation_data
+    volumes:
+      - ".:/app"
